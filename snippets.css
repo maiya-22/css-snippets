@@ -1,0 +1,80 @@
+.internal-embed.markdown-embed {
+  /* border: solid lime 2px; */
+  border: none;
+  /* border-top: dotted rgba(128, 128, 128, 0.638) 1px;  */
+  /* border-bottom: dotted rgba(128, 128, 128, 0.638) 1px; */
+  font-style: italic;
+}
+
+.internal-embed.markdown-embed::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+
+  /* border: solid orange 1px; */
+}
+
+.mod-header {
+  color: purple;
+  display: none !important;
+}
+
+.heading-collapse-indicator.collapse-indicator.collapse-icon {
+  border: solid magenta 2px;
+}
+
+/* inline heading  */
+.markdown-preview-sizer.markdown-preview-section div h1,
+.markdown-preview-sizer.markdown-preview-section div h2,
+.markdown-preview-sizer.markdown-preview-section div h3 {
+  /* background-color: gray; */
+  /* color: rgb(71, 70, 70); */
+  font-size: 0rem;
+  display: inline-block;
+  color: lime;
+  padding: 0px;
+}
+
+.markdown-preview-sizer.markdown-preview-section div,
+.markdown-preview-sizer.markdown-preview-section div,
+.markdown-preview-sizer.markdown-preview-section div {
+  /* background-color: gray; */
+  /* color: rgb(71, 70, 70); */
+  font-size: 0.7rem;
+  display: inline-block;
+  /* border: solid pink 1px; */
+  padding: 0px;
+  height: 0px;
+  /* color: green; */
+}
+/* the heading itself will only have a unique data prop, so can't select directly */
+h2[data-heading="02"] {
+}
+
+/* links in document */
+.cm-underline {
+  color: rgb(108, 107, 107);
+}
+
+.cm-underline:hover {
+  color: rgb(126, 128, 0);
+}
+
+/* the container that gives the interpolated padding, etc. */
+.internal-embed.markdown-embed.inline-embed.is-loaded {
+  /* border: solid yellow 1px; */
+  padding: 0px;
+}
+
+.internal-embed.markdown-embed.inline-embed:hover {
+  /* border: solid yellow 1px; */
+  color: lime;
+}
+
+.internal-embed.markdown-embed.inline-embed.is-loaded::before,
+.internal-embed.markdown-embed.inline-embed.is-loaded::after {
+  content: ". . .";
+  color: orange;
+  display: inline;
+}
